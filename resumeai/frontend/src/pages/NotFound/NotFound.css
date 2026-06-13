@@ -1,0 +1,33 @@
+.notfound {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  text-align: center;
+  padding: 24px;
+}
+
+.notfound-code {
+  font-family: 'DM Serif Display', serif;
+  font-size: 96px;
+  color: #2A6B4F;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.notfound-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 28px;
+  color: #111110;
+  margin-bottom: 12px;
+}
+
+.notfound-text {
+  font-size: 14px;
+  color: #888680;
+  max-width: 320px;
+  margin-bottom: 28px;
+}

@@ -1,0 +1,166 @@
+.pricing {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 24px 100px;
+  text-align: center;
+  min-height: 80vh;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #2A6B4F;
+  margin-bottom: 20px;
+}
+
+.pricing-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 48px;
+  color: #111110;
+  margin-bottom: 16px;
+}
+
+.pricing-title em {
+  font-style: italic;
+  color: #2A6B4F;
+}
+
+.pricing-sub {
+  font-size: 15px;
+  color: #888680;
+  font-weight: 300;
+  max-width: 400px;
+  line-height: 1.65;
+  margin-bottom: 48px;
+}
+
+/* PLANS */
+.plans {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.plan-card {
+  background: rgba(255,255,255,0.82);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.9);
+  border-radius: 20px;
+  padding: 36px;
+  width: 280px;
+  text-align: left;
+  position: relative;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,1) inset,
+    0 2px 4px rgba(0,0,0,0.04),
+    0 16px 48px rgba(0,0,0,0.08);
+}
+
+.plan-card.featured {
+  border: 1px solid rgba(42,107,79,0.3);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,1) inset,
+    0 2px 4px rgba(0,0,0,0.04),
+    0 16px 48px rgba(42,107,79,0.15);
+}
+
+.plan-badge {
+  position: absolute;
+  top: -12px;
+  right: 24px;
+  background: #2A6B4F;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 100px;
+  letter-spacing: 0.5px;
+}
+
+.plan-name {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #888680;
+  margin-bottom: 8px;
+}
+
+.plan-price {
+  font-family: 'DM Serif Display', serif;
+  font-size: 40px;
+  color: #111110;
+  margin-bottom: 24px;
+}
+
+.plan-price span {
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  color: #888680;
+  font-weight: 400;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan-features li {
+  font-size: 13px;
+  color: #444;
+}
+
+.plan-features li.disabled {
+  color: #C0BEB9;
+}
+
+.plan-btn {
+  width: 100%;
+  padding: 13px;
+  background: #111110;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+
+.plan-btn:hover {
+  background: #2A6B4F;
+  transform: translateY(-1px);
+}
+
+.plan-btn.current {
+  background: #F8F7F5;
+  color: #888680;
+  border: 1px solid rgba(0,0,0,0.08);
+  cursor: default;
+}
+
+.back-link {
+  background: transparent;
+  border: none;
+  color: #888680;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.back-link:hover {
+  color: #111110;
+}

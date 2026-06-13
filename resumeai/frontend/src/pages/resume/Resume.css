@@ -1,0 +1,92 @@
+.resume-page {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.resume-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.resume-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 18px;
+  color: #111110;
+}
+
+.back-btn {
+  padding: 9px 16px;
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: #888680;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.back-btn:hover {
+  color: #111110;
+  border-color: rgba(0,0,0,0.18);
+}
+
+.download-btn {
+  padding: 9px 18px;
+  background: #111110;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+
+.download-btn:hover {
+  background: #2A6B4F;
+  transform: translateY(-1px);
+}
+
+.resume-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+.resume-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 60px;
+  width: 100%;
+  max-width: 680px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04), 0 20px 60px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.r-h1 { font-family: 'DM Serif Display', serif; font-size: 28px; color: #111110; margin-bottom: 4px; }
+.r-h2 { font-family: 'DM Serif Display', serif; font-size: 20px; color: #2A6B4F; margin-top: 24px; margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid rgba(42,107,79,0.15); }
+.r-h3 { font-family: 'DM Serif Display', serif; font-size: 17px; color: #2A6B4F; margin-top: 20px; margin-bottom: 6px; }
+.r-h4 { font-size: 14px; font-weight: 600; color: #111110; margin-top: 14px; margin-bottom: 4px; }
+.r-p { font-size: 14px; color: #444; line-height: 1.6; margin-bottom: 4px; }
+.r-li { font-size: 14px; color: #444; line-height: 1.6; margin-left: 20px; margin-bottom: 3px; }
+.r-spacer { height: 8px; }
+
+@media print {
+  .no-print { display: none !important; }
+  .navbar { display: none !important; }
+  .blob { display: none !important; }
+  .resume-wrapper { padding: 0; }
+  .resume-card { box-shadow: none; border: none; border-radius: 0; padding: 40px; max-width: 100%; }
+  body { background: white !important; }
+}

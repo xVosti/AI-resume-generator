@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #EEF0EC;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Анімовані плями */
+.blob {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.55;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.blob-1 {
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, #C8DBBF, #A8CBBF);
+  top: -200px; left: -100px;
+  animation: drift1 18s linear infinite;
+}
+
+.blob-2 {
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, #D4C9E0, #C4D4E8);
+  top: -100px; right: -100px;
+  animation: drift2 22s linear infinite;
+}
+
+.blob-3 {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, #E8D8C4, #DCC8A8);
+  bottom: -100px; left: 20%;
+  animation: drift3 26s linear infinite;
+}
+
+@keyframes drift1 {
+  0%   { transform: translate(0,0) scale(1); }
+  33%  { transform: translate(80px,60px) scale(1.05); }
+  66%  { transform: translate(40px,100px) scale(0.97); }
+  100% { transform: translate(0,0) scale(1); }
+}
+
+@keyframes drift2 {
+  0%   { transform: translate(0,0) scale(1); }
+  33%  { transform: translate(-60px,80px) scale(1.08); }
+  66%  { transform: translate(-100px,40px) scale(0.95); }
+  100% { transform: translate(0,0) scale(1); }
+}
+
+@keyframes drift3 {
+  0%   { transform: translate(0,0) scale(1); }
+  50%  { transform: translate(60px,-80px) scale(1.06); }
+  100% { transform: translate(0,0) scale(1); }
+}
